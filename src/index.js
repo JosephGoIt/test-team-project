@@ -34,10 +34,10 @@
         var useElement = document.getElementById('menuIcon');
 
         // Check the current href and toggle it
-        if (useElement.getAttributeNS('http://www.w3.org/1999/xlink', 'href') === '/src/images/icons.adfc4680.svg#gg_menu-left-icon') {
-            useElement.setAttributeNS('http://www.w3.org/1999/xlink', 'href', '/src/images/icons.adfc4680.svg#icon-x'); // Change to another icon
+        if (useElement.getAttributeNS('http://www.w3.org/1999/xlink', 'href') === '/src/images/icons.svg#gg_menu-left-icon') {
+            useElement.setAttributeNS('http://www.w3.org/1999/xlink', 'href', '/src/images/icons.svg#icon-x'); // Change to another icon
         } else {
-            useElement.setAttributeNS('http://www.w3.org/1999/xlink', 'href', '/src/images/icons.adfc4680.svg#gg_menu-left-icon'); // Change back to the original icon
+            useElement.setAttributeNS('http://www.w3.org/1999/xlink', 'href', '/src/images/icons.svg#gg_menu-left-icon'); // Change back to the original icon
         }
     }
 
