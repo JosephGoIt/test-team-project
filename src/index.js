@@ -27,19 +27,3 @@
       bodyScrollLock.enableBodyScroll(document.body);
     });
   })();
-
-  // Function to toggle the SVG href
-  function toggleSvgHref() {
-    // Get the <use> element
-    var useElement = document.getElementById('menuIcon');
-
-    // Check the current href and toggle it
-    if (useElement.href.baseVal === '/src/images/icons.svg#gg_menu-left-icon') {
-        useElement.href.baseVal = '/src/images/icons.svg#icon-x'; // Change to another icon
-    } else {
-        useElement.href.baseVal = '/src/images/icons.svg#gg_menu-left-icon'; // Change back to the original icon
-    }
-}
-
-// Add click event listener to the button
-document.getElementById('toggleButton').addEventListener('click', toggleSvgHref);
