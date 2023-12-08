@@ -21,7 +21,7 @@
     </div>
     <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu" id="toggleButton">
         <svg class="menu-icon" width="24" height="24">
-                <use id="menuIcon" href="/src/images/icons.svg#gg_menu-left-icon"></use>
+                <use id="menuIcon" xlink:href="/src/images/icons.svg#gg_menu-left-icon"></use>
         </svg>  
     </button>
     <!-- <button class="menu-toggle js-close-menu">
@@ -53,10 +53,10 @@
         var useElement = document.getElementById('menuIcon');
 
         // Check the current href and toggle it
-        if (useElement.href.baseVal === '/src/images/icons.svg#gg_menu-left-icon') {
-            useElement.href.baseVal = '/src/images/icons.svg#another-icon'; // Change to another icon
+        if (useElement.getAttributeNS('http://www.w3.org/1999/xlink', 'href') === '/src/images/icons.svg#gg_menu-left-icon') {
+            useElement.setAttributeNS('http://www.w3.org/1999/xlink', 'href', '/src/images/icons.svg#another-icon'); // Change to another icon
         } else {
-            useElement.href.baseVal = '/src/images/icons.svg#gg_menu-left-icon'; // Change back to the original icon
+            useElement.setAttributeNS('http://www.w3.org/1999/xlink', 'href', '/src/images/icons.svg#gg_menu-left-icon'); // Change back to the original icon
         }
     }
 
