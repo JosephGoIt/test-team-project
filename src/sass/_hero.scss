@@ -47,7 +47,14 @@
         top: 116px;
         left: 20px;
         z-index: -1;
-        border-top-right-radius: 10px;
+        // border-top-left-radius: 100px;
+        // border-top-right-radius: 100px;
+        // border-bottom-left-radius: 100px;
+        // border-bottom-right-radius: 100px;
+        border-radius: 160px;
+        border: 2px solid white;
+        overflow: hidden;
+        padding: 5px;
     }
     .redhaired-woman-image {
         width: fit-content;
