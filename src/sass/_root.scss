@@ -28,6 +28,7 @@ a{
 body{
     margin: 0 auto;
     width: 100%;
+    // position: relative;
 }
 li{
     list-style: none;
@@ -35,4 +36,8 @@ li{
 .container{
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+}
+.image {
+    display: block;
 }
