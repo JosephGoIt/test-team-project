@@ -41,3 +41,11 @@ li{
 .image {
     display: block;
 }
+h1 {
+    color: var(--WHITE);
+    text-align: center;
+    text-shadow: 0px 4px 70px rgba(0,0,0, 0.10);
+    font-family: DM Sans;
+    font-weight: 500;
+    text-transform: uppercase;
+}
