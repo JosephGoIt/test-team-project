@@ -8,7 +8,11 @@
         <img src="/src/images/banana.png" class="image hero-image banana-image" />
     </div>
     <div class="photo-cont hero-photo-cont redhaired-woman-cont">
-        <img src="/src/images/redhaired-woman.jpg" class="image hero-image redhaired-woman-image" />
+        <img srcset="/src/images/redhaired-woman1.jpg 375w, 
+                     /src/images/redhaired-woman.jpg 1200w" 
+             sizes="(min-width: 1280px) 1200px, 
+                    (min-width: 375px) 860px, 100vw" 
+             src="/src/images/redhaired-woman1.jpg" class="image hero-image redhaired-woman-image" />
     </div>
     <div class="btn-cont hero-btn-cont shop-now-cont">
         <button class="btn hero-btn shop-now-btn" type="button">SHOP NOW</button>

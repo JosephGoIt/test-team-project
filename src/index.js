@@ -41,5 +41,5 @@
          }
      }
 
-    // // Add click event listener to the button
-    // document.getElementById('toggleButton').addEventListener('click', toggleSvgHref);
+     // Add click event listener to the button
+     document.getElementById('toggleButton').addEventListener('click', toggleSvgHref);
