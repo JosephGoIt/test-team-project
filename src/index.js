@@ -37,9 +37,9 @@
 
          // Check the current href and toggle it
          if (useElement.getAttributeNS('http://www.w3.org/1999/xlink', 'href') === '${iconSvg}#gg_menu-left-icon') {
-             useElement.setAttributeNS('http://www.w3.org/1999/xlink', 'href', '${iconSvg}#icon-x'); // Change to another icon
+          useElement.innerHTML = '<use xlink:href="${iconSvg}#icon-x"></use>'
          } else {
-             useElement.setAttributeNS('http://www.w3.org/1999/xlink', 'href', '${iconSvg}#gg_menu-left-icon'); // Change back to the original icon
+          useElement.innerHTML = '<use xlink:href="${iconSvg}#gg_menu-left-icon"></use>';
          }
      }
 
