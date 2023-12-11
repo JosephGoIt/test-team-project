@@ -45,24 +45,3 @@
 
      // Add click event listener to the button
      document.getElementById('toggleButton').addEventListener('click', toggleSvgHref);
-
-// change-icon.js
-
-import image1Path from './src/images/icons.svg#gg_menu-left-icon';
-import image2Path from './src/images/icons.svg#icon-x';
-
-// Function to toggle the image source
-function toggleImage() {
-  // Get the image element
-  var image = document.getElementById('myImage');
-
-  // Check the current source and toggle it
-  if (image.src.endsWith(image1Path)) {
-      image.src = image2Path; // Change to the second image
-  } else {
-      image.src = image1Path; // Change back to the original image
-  }
-}
-
-// Add click event listener to the toggle button
-document.getElementById('toggleButton').addEventListener('click', toggleImage);
