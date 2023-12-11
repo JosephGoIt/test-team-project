@@ -27,4 +27,14 @@
     "posthtml-include": "^1.7.4"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead"
+
+  // Example parcel configuration in package.json
+
+  "parcel": {
+    "sourceMaps": true,
+    "targets": {
+      "browsers": "> 0.25%, not dead"
+    }
+  }
 }
+
